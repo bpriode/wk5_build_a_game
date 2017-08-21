@@ -1,0 +1,27 @@
+
+
+  <h2>You have {{#mysteryWord}} {{#remainingGuesses}}{{.}}{{/remainingGuesses}}{{/mysteryWord}} guesses left</h2>
+
+<div class="underscores">
+  {{#mysteryWord}}
+  {{#guessed}}
+  {{#character}}
+  {{.}}
+  {{/character}}
+  {{/guessed}}
+  {{^guessed}}
+  {{#placeholder}}
+  {{.}}
+  {{/placeholder}}
+  {{/guessed}}
+  {{/mysteryWord}}
+</div>
+
+
+<form class="form" action="/game" method="post">
+  <input type="text" maxlength="1" name="character" placeholder="Guess A Letter">
+  <button type="submit" name="button">Make a Guess</button>
+</form>
+
+
+<p>You have already guessed: {{#mysteryWord}}{{#singleGuess}}{{.}}, {{/singleGuess}}{{/mysteryWord}}</p>

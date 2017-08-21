@@ -1,0 +1,59 @@
+*{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.container h2{
+  align-self: flex-end;
+  font-size: 36px;
+}
+
+.form{
+
+  height: 200px;
+  width: 150px;
+  margin-top: 40px;
+  align-self: center;
+}
+
+.form input{
+  height: 70px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.form button{
+  margin-left: 40px;
+  width: 80px;
+  height: 50px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.underscores{
+  width: 1000px;
+  align-self: center;
+  font-size: 90px;
+  text-align: center;
+}
+
+p{
+  font-size: 26px;
+  margin-left: 300px;
+}
+
+h1{
+  font-size: 48px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  color: gray;
+  border: 2px dashed black;
+  width: 200px;
+  padding: 20px;
+
+}
